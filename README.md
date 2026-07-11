@@ -1,27 +1,64 @@
-# How to run on server
+# How to Run the Project
 
+## 1. Install Node.js (Skip if already installed)
 
-## 1/Install node(Skip if you already installed)
+* Download the **LTS** version of Node.js from the official website.
+* Run the installer.
+* Leave the default options.
+* Make sure **"Add to PATH"** is checked (it is enabled by default).
 
-- Download the LTS version of Node.js from the official website
-- Run the installer.
-- Leave the default options.
-- Make sure "Add to PATH" is checked(it usually is by default).
+---
 
-## 2/Activate the server
+## 2. Open a Terminal
 
-### 2.1/Open cmd or Terminal and do:
-```
+Navigate to the project folder:
+
+```bash
 cd "Your file path/myapp"
 ```
-### 2.2/Run node.js
+
+---
+
+## 3. Install Dependencies
+
+Run the following command to install the required packages:
+
 ```bash
-npm install   
+npm install
 ```
-or:
+
+> You only need to run this again if you delete the `node_modules` folder or add new dependencies.
+
+---
+
+## 4. Start the Server
+
+Run either of the following commands:
+
+```bash
+npm start
 ```
+
+or
+
+```bash
 node server.js
 ```
-You should be able to see things like "Server is running at http://localhost:3000". Then click http://localhost:3000 and you should be able to see your web on the server.
 
+If the server starts successfully, you should see:
 
+```text
+Server is running at http://localhost:3000
+```
+
+---
+
+## 5. Open the Website
+
+Open your browser and visit:
+
+```text
+http://localhost:3000
+```
+
+If everything is set up correctly, your website should load successfully.
